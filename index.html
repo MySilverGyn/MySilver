@@ -20,6 +20,20 @@
 --highlight: #8c8c8c;
 }
 
+#topButton {
+    position: fixed;
+    bottom: 90px; /* Acima do botão do WhatsApp */
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    z-index: 999;
+    display: none; /* Esconde por padrão */
+    transition: background-color 0.3s;
+  }
 
 .whatsapp-float {
       position: fixed;
@@ -38,20 +52,7 @@
       z-index: 1000;
     }
 
-#topButton {
-    position: fixed;
-    bottom: 90px; /* Acima do botão do WhatsApp */
-    right: 20px;
-    background-color: #333;
-    color: white;
-    padding: 10px 14px;
-    border-radius: 50%;
-    font-size: 20px;
-    text-decoration: none;
-    z-index: 999;
-    display: none; /* Esconde por padrão */
-    transition: background-color 0.3s;
-  }
+
 
   #topButton:hover {
     background-color: #555;
@@ -585,7 +586,7 @@ font-size: 1.5rem;
 
   <!-- ===== ADICIONAR PRODUTOS SOMENTE ACIMA ===== -->
 
-<a href="#" id="topButton" title="Voltar ao topo">⬆️ Voltar ao Topo</a>
+  <a href="#" id="topButton" title="Voltar ao topo">⬆️ Voltar ao Topo</a>
 
 <footer>
 <p style="margin-bottom: 1rem;">Siga-nos nas redes sociais:</p>
