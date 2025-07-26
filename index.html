@@ -162,24 +162,58 @@ text-decoration: none;
 margin: 0 0.5rem;
 }
 
-.nav-scroll {
+.carousel-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
     background: var(--bg-nude);
+    padding: 0.5rem;
+    overflow: hidden;
+  }
+
+  .carousel-track {
+    display: flex;
     overflow-x: auto;
-    white-space: nowrap;
-    padding: 0.5rem 0;
-    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    gap: 0.5rem;
+    scrollbar-width: none;
   }
 
- .nav-scroll a {
-    display: inline-block;
-    color: var(--text-dark);
-    text-decoration: none;
-    margin: 0 1rem;
-    font-weight: bold;
-  }
-
-  .nav-scroll::-webkit-scrollbar {
+  .carousel-track::-webkit-scrollbar {
     display: none;
+  }
+
+  .carousel-track a {
+    white-space: nowrap;
+    background: white;
+    color: var(--text-dark);
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+
+  .arrow-btn {
+    background: #4a5c76;
+    border: none;
+    color: white;
+    padding: 0.6rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow-btn:hover {
+    background: #2f3d50;
+  }
+
+  .arrow-btn svg {
+    width: 16px;
+    height: 16px;
   }
 
 
@@ -207,15 +241,21 @@ font-size: 1.5rem;
 
 </header>
 
-<nav style="background: var(--bg-nude); text-align: center; padding: 0.5rem 0;">
-    <a href="index.html" style="color: var(--text-dark); text-decoration: none; margin: 0 1rem;">Início</a>
-    <a href="pulseiras.html" style="color: var(--text-dark); text-decoration: none; margin: 0 1rem;">Pulseiras</a>
-    <a href="colares.html" style="color: var(--text-dark); text-decoration: none; margin: 0 1rem;">Colares</a>
-    <a href="aneis.html" style="color: var(--text-dark); text-decoration: none; margin: 0 1rem;">Anéis</a>
-    <a href="Braceletes.html" style="color: var(--text-dark); text-decoration: none; margin: 0 1rem;">Braceletes</a>
-    <a href="Tornozeleiras.html" style="color: var(--text-dark); text-decoration: none; margin: 0 1rem;">Tornozeleiras</a>
-    <a href="argolas.html" style="color: var(--text-dark); text-decoration: none; margin: 0 1rem;">argolas</a>
-  </nav>
+<div class="carousel-nav">
+    <div class="carousel-track" id="nav-scroll">
+      <a href="index.html">INÍCIO</a>
+      <a href="argolas.html">Argolas</a>
+      <a href="braceletes.html">Braceletes</a> 
+      <a href="Tornozeleiras.html">Tornozeleiras</a>
+      <a href="colares.html">Colares</a>
+      <a href="pulseiras.html">Pulseiras</a>
+      <a href="aneis.html">Anéis</a>
+    </div>
+<button class="arrow-btn" onclick="scrollRight()">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M9 18l6-6-6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
 
 
 <h2 style="margin-top: 3rem; text-align: center;">Pulseiras</h2>
@@ -638,7 +678,14 @@ font-size: 1.5rem;
 <p style="margin-top: 1rem; font-size: 0.8rem;">Tudo posso naquele que me fortalece.</p>
 </footer>
 
-
+  <script>
+    function scrollRight() {
+      document.getElementById('nav-scroll').scrollBy({
+        left: 200,
+        behavior: 'smooth'
+      });
+    }
+  </script>
 
 </body>
 </html>
