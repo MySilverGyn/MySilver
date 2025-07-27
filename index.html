@@ -106,7 +106,7 @@ margin: auto;
 
 .catalogo {
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 gap: 2rem;
 }
 
@@ -216,6 +216,12 @@ margin: 0 0.5rem;
     height: 16px;
   }
 
+  .carousel-nav {
+  padding: 0.5rem 1rem;
+}
+
+
+
 
 @media (max-width: 600px) {
 header h1 {
@@ -252,12 +258,17 @@ font-size: 1.5rem;
       <a href="aneis.html">Anéis</a>
     </div>
 
-<button class="arrow-btn" onclick="scrollRight()">
+  <button class="arrow-btn" onclick="scrollRight()">
       <svg viewBox="0 0 24 24" fill="none">
         <path d="M9 18l6-6-6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </button>
 
+  <button class="arrow-btn" onclick="scrollLeft()">
+  <svg viewBox="0 0 24 24" fill="none">
+    <path d="M15 18l-6-6 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
 
   <script>
     function scrollRight() {
@@ -267,6 +278,22 @@ font-size: 1.5rem;
       });
     }
   </script>
+
+  <script>
+  function scrollRight() {
+    document.getElementById('nav-scroll').scrollBy({
+      left: 200,
+      behavior: 'smooth'
+    });
+  }
+  function scrollLeft() {
+    document.getElementById('nav-scroll').scrollBy({
+      left: -200,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
 
 
 <h2 style="margin-top: 3rem; text-align: center;">Pulseiras</h2>
@@ -632,10 +659,8 @@ font-size: 1.5rem;
 
 <!-- Adicione mais produtos aqui -->
 
-
-
 </section>
-</main>
+
 
 <h2 style="margin-top: 3rem; text-align: center;">Colares</h2>
 
@@ -675,6 +700,32 @@ font-size: 1.5rem;
 
 
   <!-- ===== ADICIONAR PRODUTOS SOMENTE ACIMA ===== -->
+
+  <script>
+    function scrollRight() {
+      document.getElementById('nav-scroll').scrollBy({
+        left: 200,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
+  <script>
+    function scrollRight() {
+      document.getElementById('nav-scroll').scrollBy({
+        left: 200,
+        behavior: 'smooth'
+    });
+  }
+  function scrollLeft() {
+      document.getElementById('nav-scroll').scrollBy({
+        left: -200,
+        behavior: 'smooth'
+    });
+  }
+</script>
+
+
 
   <a href="#" id="topButton" title="Voltar ao topo">⬆️ Voltar ao Topo</a>
 
