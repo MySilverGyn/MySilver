@@ -7,7 +7,7 @@ fetch('../produtos.json')
   .then(produtos => {
     const container = document.getElementById('produtos-container');
 
-    const filtrados = produtos.filter(p => p.categoria === categoriaDesejada);
+    const filtrados = produtos.filter(p => p.categoria === Argolas);
 
     if (filtrados.length === 0) {
       container.innerHTML = '<p>Nenhum produto nesta categoria.</p>';
