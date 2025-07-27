@@ -185,6 +185,42 @@
       width: 16px;
       height: 16px;
     }
+
+
+.catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+   .produto {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .produto img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .produto-info {
+      padding: 1rem;
+    }
+
+    .produto-info h3 {
+      margin: 0 0 0.5rem;
+    }
+
+    .preco {
+      color: #333;
+      font-weight: bold;
+    }
+
+
   </style>
 </head>
 <body>
@@ -226,7 +262,7 @@
   <div id="produtos-container" class="catalogo"></div>
 </main>
 
-<script src="../script/filtro-categoria.js" data-categoria="Argolas"></script>
+ <script src="/MYSILVER/script/filtro-categoria.js" data-categoria="Argolas"></script>
 
 <script>
   function scrollRight() {
