@@ -248,51 +248,33 @@ font-size: 1.5rem;
 </header>
 
 <div class="carousel-nav">
-    <div class="carousel-track" id="nav-scroll">
-      <a href="index.html">INÍCIO</a>
-      <a href="argolas.html">Argolas</a>
-      <a href="braceletes.html">Braceletes</a> 
-      <a href="Tornozeleiras.html">Tornozeleiras</a>
-      <a href="colares.html">Colares</a>
-      <a href="pulseiras.html">Pulseiras</a>
-      <a href="aneis.html">Anéis</a>
-    </div>
-
-  <button class="arrow-btn" onclick="scrollRight()">
-      <svg viewBox="0 0 24 24" fill="none">
-        <path d="M9 18l6-6-6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </button>
-
+  
+  <!-- Botão ESQUERDA ⬅ -->
   <button class="arrow-btn" onclick="scrollLeft()">
-  <svg viewBox="0 0 24 24" fill="none">
-    <path d="M15 18l-6-6 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
-</button>
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M15 18l-6-6 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
 
-  <script>
-    function scrollRight() {
-      document.getElementById('nav-scroll').scrollBy({
-        left: 200,
-        behavior: 'smooth'
-      });
-    }
-  </script>
+  <!-- Links roláveis -->
+  <div class="carousel-track" id="nav-scroll">
+    <a href="index.html">INÍCIO</a>
+    <a href="argolas.html">Argolas</a>
+    <a href="braceletes.html">Braceletes</a> 
+    <a href="Tornozeleiras.html">Tornozeleiras</a>
+    <a href="colares.html">Colares</a>
+    <a href="pulseiras.html">Pulseiras</a>
+    <a href="aneis.html">Anéis</a>
+  </div>
 
-  <script>
-  function scrollRight() {
-    document.getElementById('nav-scroll').scrollBy({
-      left: 200,
-      behavior: 'smooth'
-    });
-  }
-  function scrollLeft() {
-    document.getElementById('nav-scroll').scrollBy({
-      left: -200,
-      behavior: 'smooth'
-    });
-  }
-</script>
+  <!-- Botão DIREITA ➡ -->
+  <button class="arrow-btn" onclick="scrollRight()">
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M9 18l6-6-6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+</div>
 
 
 
@@ -702,25 +684,17 @@ font-size: 1.5rem;
   <!-- ===== ADICIONAR PRODUTOS SOMENTE ACIMA ===== -->
 
   <script>
-    function scrollRight() {
-      document.getElementById('nav-scroll').scrollBy({
-        left: 200,
-        behavior: 'smooth'
-      });
-    }
-  </script>
-
-  <script>
-    function scrollRight() {
-      document.getElementById('nav-scroll').scrollBy({
-        left: 200,
-        behavior: 'smooth'
+  function scrollRight() {
+    document.getElementById('nav-scroll').scrollBy({
+      left: 200,
+      behavior: 'smooth'
     });
   }
+
   function scrollLeft() {
-      document.getElementById('nav-scroll').scrollBy({
-        left: -200,
-        behavior: 'smooth'
+    document.getElementById('nav-scroll').scrollBy({
+      left: -200,
+      behavior: 'smooth'
     });
   }
 </script>
