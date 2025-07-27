@@ -36,3 +36,13 @@ h1 {
   color: #2c8f2c;
   margin-top: 0.5rem;
 }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
