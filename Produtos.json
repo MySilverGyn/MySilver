@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "nome": "Argola Coração Liso",
+    "descricao": "Prata 925",
+    "preco": 29.90,
+    "imagem": "imagens/ARG0001.jpg",
+    "categoria": "Argolas"
+  },
+  {
+    "id": 2,
+    "nome": "Argola Coração Torcido",
+    "descricao": "Prata 925",
+    "preco": 29.90,
+    "imagem": "imagens/ARG0002.jpg",
+    "categoria": "Argolas"
+  }
+]
+
+
+
