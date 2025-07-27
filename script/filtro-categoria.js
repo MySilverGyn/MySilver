@@ -2,7 +2,7 @@
 const scriptTag = document.currentScript;
 const categoriaDesejada = scriptTag.dataset.categoria;
 
-fetch('Produtos/produtos.json')
+fetch('MySilver/Produtos/produtos.json')
   .then(response => response.json())
   .then(produtos => {
     const container = document.getElementById('produtos-container');
