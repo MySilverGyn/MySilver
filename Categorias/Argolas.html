@@ -234,12 +234,12 @@
   <h3>Catálogo de Argolas</h3>
 </header>
 
-
-  <button class="arrow-btn" onclick="scrollLeft()">
-    <svg viewBox="0 0 24 24" fill="none">
-      <path d="M15 18l-6-6 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </button>
+<div class="carousel-nav">
+    <button class="arrow-btn" onclick="scrollLeft()">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M15 18l-6-6 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
 </div>
 
 <div class="carousel-nav">
@@ -267,19 +267,20 @@
  <script src="script/filtro-categoria.js" data-categoria="Argolas"></script>
 
   <script>
-  function scrollRight() {
-    document.getElementById('nav-scroll').scrollBy({
-      left: 200,
-      behavior: 'smooth'
-    });
-  }
-  function scrollLeft() {
-    document.getElementById('nav-scroll').scrollBy({
-      left: -200,
-      behavior: 'smooth'
-    });
-  }
-</script>
+    function scrollLeft() {
+      document.getElementById('nav-scroll').scrollBy({
+        left: -200,
+        behavior: 'smooth'
+      });
+    }
+
+    function scrollRight() {
+      document.getElementById('nav-scroll').scrollBy({
+        left: 200,
+        behavior: 'smooth'
+      });
+    }
+  </script>
 
 <footer>
   <p style="margin-bottom: 1rem;">Siga-nos nas redes sociais:</p>
