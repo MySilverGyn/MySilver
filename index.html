@@ -219,6 +219,14 @@
       width: 16px;
       height: 16px;
     }
+
+    .banner-inicio {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
   </style>
 </head>
 <body>
@@ -278,12 +286,20 @@
   </footer>
 
   <script src="scripts/script.js"></script>
-  <script>
-    function scrollRight() {
-      document.getElementById('nav-scroll').scrollBy({ left: 200, behavior: 'smooth' });
-    }
+ 
+ <script>
     function scrollLeft() {
-      document.getElementById('nav-scroll').scrollBy({ left: -200, behavior: 'smooth' });
+      document.getElementById('nav-scroll').scrollBy({
+        left: -200,
+        behavior: 'smooth'
+      });
+    }
+
+    function scrollRight() {
+      document.getElementById('nav-scroll').scrollBy({
+        left: 200,
+        behavior: 'smooth'
+      });
     }
   </script>
 
