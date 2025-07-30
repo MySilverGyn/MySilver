@@ -153,16 +153,19 @@
       display: none;
     }
 
-    .carousel-track a {
-      white-space: nowrap;
-      background: white;
-      color: var(--text-dark);
-      padding: 0.6rem 1rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      flex-shrink: 0;
-    }
+  .carousel-track a {
+    white-space: nowrap;
+    background: white;
+    color: var(--text-dark);
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    flex-shrink: 0;
+
+    width: max-content;       /* ← Faz a largura se ajustar ao conteúdo */
+    margin: 0 auto;   
+  }
 
     .arrow-btn {
       background: #4a5c76;
