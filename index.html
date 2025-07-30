@@ -70,8 +70,17 @@
       .catalogo {
         grid-template-columns: repeat(2, 1fr);
       }
+      .info-item {
+    max-width: 80px;
     }
-
+    .info-icon {
+      width: 30px;
+      height: 30px;
+    }
+    .info-banner {
+      padding: 10px;
+    }
+  }
     .produto {
       background: #fff;
       border-radius: 8px;
@@ -226,11 +235,11 @@
       height: 16px;
     }
 
-    .banner-principal {
-      width: 100%;
+    .banner-principal img {
       max-width: 100%;
       height: auto;
       display: block;
+      margin: 0 auto;
     }
 
     .container {
@@ -248,7 +257,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 20px;
-  flex-wrap: wrap;             
+  flex-wrap: nowrap;         
   gap: 1rem;                   
   text-align: center;
 }
