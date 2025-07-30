@@ -166,41 +166,41 @@
       background-color: #555;
     }
 
-    .carousel-nav {
-      position: relative;
-      display: flex;
-      align-items: center;
-      background: var(--bg-light);
-      padding: 0.5rem 1rem;
-      overflow: hidden;
-    }
+.carousel-nav {
+  position: relative;
+  display: flex;
+  justify-content: center;   
+  background: var(--bg-light);
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+}
 
-    .carousel-track {
-      display: flex;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      gap: 0.5rem;
-      scrollbar-width: none;
-    }
+.carousel {
+  max-width: 1000px;
+  width: 100%;
+}
 
-    .carousel-track::-webkit-scrollbar {
-      display: none;
-    }
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 0.5rem;
+  scrollbar-width: none;
+}
 
-    .carousel-track a {
-      white-space: nowrap;
-      background: white;
-      color: var(--text-dark);
-      padding: 0.6rem 1rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      flex-shrink: 0;
-    }
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
 
-    .carousel {
-      margin: 0 auto;         
-      max-width: 1000px;      
+.carousel-track a {
+  white-space: nowrap;
+  background: white;
+  color: var(--text-dark);
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  flex-shrink: 0;
 }
 
 
